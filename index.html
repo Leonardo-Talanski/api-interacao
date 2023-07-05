@@ -8,30 +8,40 @@
 <body>
 <header>
     <h1>Requisição e Respostas via API</h1>
+    <button type="button" id="botao">Clique para mudar o nome </button>
 </header>
     <div id="resposta">
 
     </div>
 
     <script>
-        const requisicao = new Request('http://localhost:3000/produtos');
+    // const requisicao = new Request('http://localhost:3000/produtos');
 
-        fetch(requisicao)
-            .then(resposta => resposta.json())
-            .then(resposta => {
+    //     fetch(requisicao)
+    //         .then(resposta => resposta.json())
+    //         .then(resposta => {
                 
-                for(let i = 0; i < 3; i++){
+    //             for(let i = 0; i < 3; i++){
 
-                    let linha = `<li>${resposta[i].id}</li>`;
-                    linha += `<li>${resposta[i].descricao}</li>`;
-                    linha += `<li>${resposta[i].preco}</li>`;
+    //                 let linha = `<li>${resposta[i].id}</li>`;
+    //                 linha += `<li>${resposta[i].descricao}</li>`;
+    //                 linha += `<li>${resposta[i].preco}</li>`;
 
-                    const ul = document.createElement("ul");
+    //                 const ul = document.createElement("ul");
 
-                    document.querySelector(`#resposta`).appendChild(ul).innerHTML = linha;
+    //                 document.querySelector(`#resposta`).appendChild(ul).innerHTML = linha;
 
-                }
-        });
+    //             }
+
+    //     });
+
+    document.querySelector('#botao').addEventListener('click', () => {
+
+        document.querySelector('h1').innerHTML = 'Novo Título';
+
+
+    });
+
     </script>
 </body>
 </html>
