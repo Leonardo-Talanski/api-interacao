@@ -1,19 +1,37 @@
 {
-    "produtos":[
-        {
-            "id":1,
-            "descricao" : "Sapato",
-            "preco": "19,90"
-        },
-        {
-            "id":2,
-            "descricao" : "Sapatilha",
-            "preco": "29,90"
-        },
-        {
-            "id":3,
-            "descricao" : "chinelo",
-            "preco": "49,90"
-        }
-    ]
+  "produtos": [
+    {
+      "id": 1,
+      "descricao": "Sapato",
+      "preco": "19,90"
+    },
+    {
+      "id": 2,
+      "descricao": "Sapatilha",
+      "preco": "29,90"
+    },
+    {
+      "id": 3,
+      "descricao": "chinelo",
+      "preco": "49,90"
+    },
+    {
+      "id": 4
+    },
+    {
+      "descricao": "Cinto de couro croco",
+      "preco": "84,90",
+      "id": 5
+    },
+    {
+      "id": 6,
+      "descricao": "Bolsa de couro selvagem",
+      "preco": "57"
+    },
+    {
+      "id": 7,
+      "descricao": "Cinto de couro crocodilo dundie",
+      "preco": "58,90"
+    }
+  ]
 }
