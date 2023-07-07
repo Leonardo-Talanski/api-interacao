@@ -16,7 +16,10 @@
       "preco": "49,90"
     },
     {
-      "id": 4
+      "id": 4,
+      "descricao": "chinelo",
+      "preco": "49,90"
+      
     },
     {
       "descricao": "Cinto de couro croco",
@@ -32,6 +35,11 @@
       "id": 7,
       "descricao": "Cinto de couro crocodilo dundie",
       "preco": "58,90"
+    },
+    {
+      "id": 8,
+      "descricao": "Sapato new orleans",
+      "preco": "41"
     }
   ]
 }
