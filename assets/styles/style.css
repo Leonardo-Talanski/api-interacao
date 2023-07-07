@@ -1,7 +1,47 @@
+ @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Montserrat+Alternates:wght@700&display=swap');
+
+
+ body {
+    margin: 30px;
+    font-family: 'Cormorant Garamond', serif;
+ 
+ }
+
 .produto {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
     list-style: none;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 600;
+    
+    
+}
+
+.estilo-titulo a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Montserrat Alternates', sans-serif;
+    text-shadow: 1px 1px;
+    border-bottom: 2px solid #000000;
+
+}
+
+.estilo-titulo h1{
+    background-color: #DFD7BF;
+    color: #3F2305;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    border-bottom: 2px solid #000000;
+    text-shadow: 1px 1px;
+  
+}
+
+.listaProduto{
+    background-color: #F2EAD3;
+    border-radius: 10px;
+    border-bottom: 2px solid #000000;
+    
 }
