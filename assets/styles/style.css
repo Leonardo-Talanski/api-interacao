@@ -1,47 +1,137 @@
  @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Montserrat+Alternates:wght@700&display=swap');
 
 
- body {
-    margin: 30px;
-    font-family: 'Cormorant Garamond', serif;
- 
+
+
+ .produto {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     flex-direction: row;
+     list-style: none;
+     font-family: 'Cormorant Garamond', serif;
+     font-weight: 600;
+
+
  }
 
-.produto {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-    list-style: none;
-    font-family: 'Cormorant Garamond', serif;
-    font-weight: 600;
+ .estilo-titulo a {
+     text-decoration: none;
+     text-transform: uppercase;
+     font-family: 'Montserrat Alternates', sans-serif;
+     text-shadow: 1px 1px;
+     border-bottom: 2px solid #000000;
+
+ }
+
+ .estilo-titulo h1 {
+     background-color: #DFD7BF;
+     color: #3F2305;
+     display: flex;
+     justify-content: center;
+     border-radius: 10px;
+     border-bottom: 2px solid #000000;
+     text-shadow: 1px 1px;
+
+ }
+
+ .listaProduto {
+     background-color: #F2EAD3;
+     border-radius: 10px;
+     border-bottom: 2px solid #000000;
+
+ }
+
+ /* --Estilização Update com PUT-- */
+
+ .pageTitlePut {
+     display: flex;
+     justify-content: center;
+     width: auto;
+     height: auto;
+
+ }
+
+ .pageTitlePut h2 {
+     color: #000;
+     text-align: center;
+     font-family: Ubuntu;
+     font-size: 32px;
+     font-style: normal;
+     font-weight: 400;
+     line-height: normal;
+ }
+
+ .box-form {
+     display: flex;
+     justify-content: center;
+     flex-direction: column;
+     border-radius: 12px;
+     background: #FFF;
+     box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+     width: 420px;
+     height: 439px;
+     display: flex;
+    align-items: center;   
     
-    
-}
+ }
 
-.estilo-titulo a{
-    text-decoration: none;
-    text-transform: uppercase;
-    font-family: 'Montserrat Alternates', sans-serif;
-    text-shadow: 1px 1px;
-    border-bottom: 2px solid #000000;
+ .box-form h1 {
+     color: #000;
+     text-align: center;
+     font-family: Ubuntu;
+     font-size: 24px;
+     font-style: normal;
+     font-weight: 400;
+     line-height: normal;
+ }
 
-}
+ .box-father {
+     background: #FEFFE4;
+     width: 100%;
+     height: 1024px;
+ }
 
-.estilo-titulo h1{
-    background-color: #DFD7BF;
-    color: #3F2305;
-    display: flex;
-    justify-content: center;
-    border-radius: 10px;
-    border-bottom: 2px solid #000000;
-    text-shadow: 1px 1px;
-  
-}
+ .box-father form {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     margin: auto;
 
-.listaProduto{
-    background-color: #F2EAD3;
-    border-radius: 10px;
-    border-bottom: 2px solid #000000;
-    
-}
+ }
+
+ .box-form button {
+     width: 303px;
+     height: 46px;
+     flex-shrink: 0;
+     border-radius: 4px;
+     background: #48A4FA;
+     color: #FFF;
+     text-align: center;
+     font-family: Ubuntu;
+     font-size: 24px;
+     font-style: normal;
+     font-weight: 400;
+     line-height: normal;
+     border-radius: 4px;
+     background: #48A4FA;
+ }
+
+ #id {
+     width: 304px;
+     height: 34px;
+     flex-shrink: 0;
+     border-radius: 4px;
+     border: 1px solid #000;
+     background: #E3E2E2;
+ }
+
+ #descricao,
+ #preco {
+     width: 304px;
+     height: 34px;
+     flex-shrink: 0;
+     border-radius: 4px;
+     border: 1px solid #000;
+     background: #FEFFE4;
+ }
