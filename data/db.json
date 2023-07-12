@@ -19,7 +19,6 @@
       "id": 4,
       "descricao": "Bota de Couro",
       "preco": "49,90"
-      
     },
     {
       "descricao": "Cinto de Couro Crocodilo",
@@ -27,19 +26,9 @@
       "id": 5
     },
     {
-      "id": 6,
       "descricao": "Bolsa de Couro Selvagem",
-      "preco": "57,90"
-    },
-    {
-      "id": 7,
-      "descricao": "Cinto de couro Crocodilo Dundie",
-      "preco": "58,90"
-    },
-    {
-      "id": 8,
-      "descricao": "Sapato New Orleans",
-      "preco": "41,90"
+      "preco": "55,90",
+      "id": 6
     }
   ]
 }

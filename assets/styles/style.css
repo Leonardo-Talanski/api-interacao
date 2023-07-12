@@ -37,11 +37,41 @@
 
  }
 
- .listaProduto {
-     background-color: #F2EAD3;
-     border-radius: 10px;
-     border-bottom: 2px solid #000000;
+ #listaProdutos {
+     display: flex;
+     flex-direction: column;
+     color: #000;
+     font-family: Ubuntu;
+     font-size: 24px;
+     font-style: normal;
+     font-weight: 400;
+     display: flex;
+     align-items: center;
+ }
 
+ #listaProdutos ul {
+     width: 1500px;
+     line-height: 43px;
+     flex-shrink: 0;
+     border-bottom: 1px solid #000;
+     background: #FFF;
+     display: flex;
+     justify-content: space-between;
+ }
+
+ #listaProdutos li{
+    display: flex;
+    padding-inline: 40px;
+ }
+
+ #listaProdutos ul:nth-child(odd) {
+    border-bottom: 1px solid #000;
+    background: #fff;
+ }
+
+ #listaProdutos ul:nth-child(even) {
+    border-bottom: 1px solid #000;
+    background: #fff1c1;
  }
 
  /* --Estilização Update com PUT-- */
@@ -67,8 +97,9 @@
  }
 
  .containerButton {
-    display: flex;
-    align-items: center;
+     display: flex;
+     align-items: center;
+     width: 370px;
  }
 
  #btAtualizar {
@@ -86,6 +117,8 @@
      border-radius: 4px;
      background: #48A4FA;
      margin: 28px;
+     border: none;
+     box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
  }
 
  #btCancelar {
@@ -94,7 +127,34 @@
      border-radius: 4px;
      background: #F59999;
      box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+     font-family: 'Ubuntu', sans-serif;
+     color: #444;
+     text-align: center;
+     font-family: Ubuntu;
+     font-size: 18px;
+     font-style: normal;
+     font-weight: 400;
+     line-height: normal;
+     border: none;
+
  }
+
+ #btAtualizar:hover {
+     background-color: #007BED;
+ }
+
+ #btCancelar:hover {
+     background-color: #ff5f5f;
+ }
+
+ #btAtualizar:active {
+     box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.25) inset;
+ }
+
+ #btCancelar:active {
+     box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.25) inset;
+ }
+
 
  .box-father {
      background: #FEFFE4;
@@ -134,6 +194,7 @@
      border: 1px solid #000;
      background: #E3E2E2;
      margin: 15px;
+     font-style: italic;
  }
 
  #descricao,
@@ -149,7 +210,9 @@
      font-weight: 400;
      line-height: normal;
      margin: 15px;
+     font-style: italic;
  }
+
 
  .label-style {
      display: flex;
@@ -157,3 +220,14 @@
      padding-inline: 4rem;
 
  }
+
+ .box-product {
+    font-size: 29pt;
+    font-weight: 600;
+    padding-inline: 210px;
+    margin-top: 40px;
+    padding-inline: 113px;
+
+ }
+
+ 
