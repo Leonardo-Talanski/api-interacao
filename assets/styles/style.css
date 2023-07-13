@@ -23,7 +23,6 @@
      font-family: 'Montserrat Alternates', sans-serif;
      text-shadow: 1px 1px;
      border-bottom: 2px solid #000000;
-
  }
 
  .estilo-titulo h1 {
@@ -42,7 +41,7 @@
      flex-direction: column;
      color: #000;
      font-family: Ubuntu;
-     font-size: 24px;
+     font-size: 16pt;
      font-style: normal;
      font-weight: 400;
      display: flex;
@@ -52,7 +51,6 @@
  #listaProdutos ul {
      width: 1500px;
      line-height: 43px;
-     flex-shrink: 0;
      border-bottom: 1px solid #000;
      background: #FFF;
      display: flex;
@@ -62,6 +60,7 @@
  #listaProdutos li{
     display: flex;
     padding-inline: 40px;
+    font-size: 16pt;
  }
 
  #listaProdutos ul:nth-child(odd) {
@@ -74,6 +73,11 @@
     background: #fff1c1;
  }
 
+ #listaProdutos li:nth-child(2) {
+    margin-right: auto;
+    margin-left: 5rem;
+ }
+
  /* --Estilização Update com PUT-- */
 
  .box-form {
@@ -84,6 +88,7 @@
      height: 439px;
      display: flex;
      align-items: center;
+    
  }
 
  .box-form h1 {
@@ -97,9 +102,11 @@
  }
 
  .containerButton {
-     display: flex;
-     align-items: center;
-     width: 370px;
+    display: flex;
+    width: 80%;
+    height: 120px;
+    align-items: center;
+    justify-content: space-evenly;
  }
 
  #btAtualizar {
@@ -116,7 +123,6 @@
      line-height: normal;
      border-radius: 4px;
      background: #48A4FA;
-     margin: 28px;
      border: none;
      box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
  }
@@ -136,7 +142,6 @@
      font-weight: 400;
      line-height: normal;
      border: none;
-
  }
 
  #btAtualizar:hover {
@@ -155,13 +160,11 @@
      box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.25) inset;
  }
 
-
  .box-father {
      background: #FEFFE4;
      width: 100%;
      height: 1024px;
  }
-
 
  .box-father form {
      display: flex;
@@ -221,13 +224,18 @@
 
  }
 
- .box-product {
-    font-size: 29pt;
-    font-weight: 600;
-    padding-inline: 210px;
-    margin-top: 40px;
-    padding-inline: 113px;
-
+ .box-product{
+    margin-top: 80px;
  }
+
+ .box-product h1 {
+    font-size: 24px;
+    font-weight: 400;
+    margin-top: 40px;
+    padding-inline: 185px;
+    margin: 20px;
+ }
+
+
 
  
