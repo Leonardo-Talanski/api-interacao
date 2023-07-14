@@ -3,32 +3,38 @@
     {
       "id": 1,
       "descricao": "Sapato Social",
-      "preco": "R$ 19,90"
+      "preco": "R$ 19,90",
+      "atualizado": false
     },
     {
       "id": 2,
       "descricao": "Sapatilha Chicago",
-      "preco": "R$ 29,90"
+      "preco": "R$ 25,90",
+      "atualizado": false
     },
     {
       "id": 3,
-      "descricao": "Chinelo Havaianas",
-      "preco": "R$ 49,90"
+      "descricao": "Chinelo Havainas",
+      "preco": "R$ 32,90",
+      "atualizado": true
     },
     {
       "id": 4,
       "descricao": "Bota de Couro",
-      "preco": "R$ 49,90"
+      "preco": "R$ 49,90",
+      "atualizado": false
     },
     {
+      "id": 5,
       "descricao": "Cinto de Couro Crocodilo",
       "preco": "R$ 84,90",
-      "id": 5
+      "atualizado": false
     },
     {
+      "id": 6,
       "descricao": "Bolsa de Couro Selvagem",
       "preco": "R$ 55,90",
-      "id": 6
+      "atualizado": false
     }
   ]
 }
