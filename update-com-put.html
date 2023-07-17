@@ -31,7 +31,7 @@
 
             <div class="containerButton">
                  <button type="button" id="btAtualizar">Atualizar</button>
-                 <button type="button" id="btCancelar">Cancelar</button>
+                 <button type="reset" id="btCancelar" disbaled>Cancelar</button>
             </div>
 
         </form>
@@ -48,13 +48,15 @@
 
     <script>
 
-        // --Desafio 1
+        // --Ínicio Desafio 1-- //
+
+     
 
         document.querySelector('#listaProdutos').addEventListener('click', event => {
             // console.log(event.target);
             if(event.target.closest('ul').classList.contains('produto')) {
                 // console.log(event.target);
-                const elementoBase = event.target.parentElement;
+                const elementoBase = event.target.closest('ul');
 
                 document.querySelector('input#id').value = elementoBase.querySelector('[data-produto="id"]').innerHTML;
 
@@ -68,6 +70,18 @@
 
 
         // --Fim Desafio 1
+
+
+        
+
+        // --ínicio Desafio 2-- //
+
+        if(idPreenchido ===true){
+            document.querySelector ===('btCancelar')
+        }
+       
+
+        // --Fim Desafio 2-- //
 
         document.querySelector('#btAtualizar').addEventListener('click', () => {
 
