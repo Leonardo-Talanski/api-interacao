@@ -125,49 +125,78 @@
      justify-content: space-evenly;
  }
 
- #btAtualizar {
-     width: 167px;
-     height: 46px;
-     border-radius: 4px;
-     background: #48A4FA;
-     color: #FFF;
-     text-align: center;
-     font-family: Ubuntu;
-     font-size: 24px;
-     font-style: normal;
-     font-weight: 400;
-     line-height: normal;
-     border-radius: 4px;
-     background: #48A4FA;
-     border: none;
-     box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+ .bt-Confirmar {
+    width: 10.4rem;
+    height: 2.9rem;
+    border-radius: 0.25rem;
+    background: #48A4FA;
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    color: #FFF;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border: none;
  }
 
- #btCancelar {
-     width: 118px;
-     height: 46px;
-     border-radius: 4px;
-     background: #F59999;
-     box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
-     font-family: 'Ubuntu', sans-serif;
-     color: #444;
-     text-align: center;
-     font-family: Ubuntu;
-     font-size: 18px;
-     font-style: normal;
-     font-weight: 400;
-     line-height: normal;
-     border: none;
+ .bt-Confirmar:disabled {
+    background: #CAE6FF;
+}
+
+.bt-confirmar:enabled:hover,
+.bt-confirmar:enabled:active {
+    background: #007BED;
+}
+
+ .bt-Cancelar {
+    width: 7.4rem;
+    height: 2.9rem;
+    border-radius: 0.25rem;
+    background: #fff;
+    border: 1px solid #F59999;
+    box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.25);
+    color: #F59999;;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
  }
+
+ .bt-Cancelar:disabled {
+     background: #fff;
+     color: #ccc;
+     border: 1px solid #ccc;
+ }
+
+ .bt:enabled {
+     cursor: pointer;
+ }
+
+ .bt:disabled {
+     cursor: not-allowed;
+     box-shadow: none;
+ }
+
+ .bt-cancelar:enabled:hover,
+ .bt-cancelar:enabled:active {
+     background: #F59999;
+     color: #fff;
+ }
+
+ .bt-confirmar:enabled:active,
+ .bt-cancelar:enabled:active {
+     box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+ }
+
 
  #btAtualizar:hover {
      background-color: #007BED;
  }
 
-
- #btCancelar:hover {
-     background-color: #ff5f5f;
- }
 
  #btAtualizar:active {
      box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.25) inset;
@@ -177,9 +206,13 @@
      box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.25) inset;
  }
 
+
+ 
+  /* --Produtos-- */
+
  .box-product {
-    margin-top: 80px;
-}
+     margin-top: 80px;
+ }
 
  .box-product h1 {
      font-size: 24px;
@@ -224,7 +257,7 @@
      display: flex;
      padding-inline: 40px;
      font-size: 16pt;
-     
+
  }
 
  #listaProdutos li:nth-child(2) {

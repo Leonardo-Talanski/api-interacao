@@ -30,8 +30,8 @@
             <input class="input-placeholder" type="text" id="preco" placeholder=" digite o preço do produto">
 
             <div class="containerButton">
-                 <button type="button" id="btAtualizar">Atualizar</button>
-                 <button type="reset" id="btCancelar" disbaled>Cancelar</button>
+                <button class=" bt bt-Confirmar" type="button" id="btAtualizar"disabled>Atualizar</button>
+                <button class="bt bt-Cancelar" type="reset" id="btCancelar" disabled>Cancelar</button>
             </div>
 
         </form>
@@ -50,11 +50,9 @@
 
         // --Ínicio Desafio 1-- //
 
-     
-
         document.querySelector('#listaProdutos').addEventListener('click', event => {
             // console.log(event.target);
-            if(event.target.closest('ul').classList.contains('produto')) {
+            if (event.target.closest('ul').classList.contains('produto')) {
                 // console.log(event.target);
                 const elementoBase = event.target.closest('ul');
 
@@ -66,22 +64,65 @@
 
             }
 
+            verificaSeInputsEstaoPreenchidos();
+
+        });
+
+        // --Fim Desafio 1-- //
+
+
+        // --Ínicio Desafio 2-- //
+
+        function verificaSeInputsEstaoPreenchidos() {
+
+            const idPreenchido = document.querySelector('input#id').value !== "";
+            const descricaoPreenchido = document.querySelector('input#descricao').value !== "";
+            const precoPreenchido = document.querySelector('input#preco').value !== "";
+
+            if (idPreenchido || descricaoPreenchido || precoPreenchido) {
+                document.querySelector('button#btCancelar').removeAttribute('disabled');
+                document.querySelector('button#btAtualizar').removeAttribute('disabled');
+                
+                
+            } else {
+                document.querySelector('button#btCancelar').setAttribute('disabled', '');
+                document.querySelector('button#btAtualizar').removeAttribute('disabled');
+            }
+
+             // --Ínicio Desafio 3-- //
+
+            if (idPreenchido) {
+            document.querySelector('button#btAtualizar').removeAttribute('disabled');
+        } else{
+            document.querySelector('button#btAtualizar').setAttribute('disabled','');
+        }
+    
+         // --Fim Desafio 3-- //
+
+        }
+
+        // Complemento desafio 2 *Desabilitar o botão no reset do formulário //
+
+        document.querySelector('form').addEventListener('reset', () => {
+            document.querySelector('button#btCancelar').setAttribute('disabled','');
+            document.querySelector('button#btAtualizar').removeAttribute('disabled');
+        });
+
+        // Verifica os campos do formulário na digitação manual
+        document.querySelector('form').addEventListener('input', () => {
+            verificaSeInputsEstaoPreenchidos();
         });
 
 
-        // --Fim Desafio 1
+        // --Fim Desafio 2-- //
 
 
-        
-
-        // --ínicio Desafio 2-- //
-
-        if(idPreenchido ===true){
-            document.querySelector ===('btCancelar')
-        }
        
 
-        // --Fim Desafio 2-- //
+      
+    
+
+       
 
         document.querySelector('#btAtualizar').addEventListener('click', () => {
 
@@ -89,7 +130,7 @@
                 'id': null,
                 'descricao': document.querySelector('#descricao').value,
                 'preco': document.querySelector('#preco').value,
-                'atualizado':true
+                'atualizado': true
             }
 
             const id = document.querySelector('#id').value;
@@ -125,31 +166,31 @@
                     ul.classList.add('produto');
                     ul.id = resposta[i].id;
 
-                    if(resposta[i].atualizado) {
+                    if (resposta[i].atualizado) {
                         ul.style.color = 'blue';
                     }
 
                     const liId = document.createElement('li');
-                    liId.setAttribute('data-produto','id');
+                    liId.setAttribute('data-produto', 'id');
                     liId.innerHTML = resposta[i].id;
 
                     const liDescricao = document.createElement('li');
-                    liDescricao.setAttribute('data-produto','descricao');
+                    liDescricao.setAttribute('data-produto', 'descricao');
                     liDescricao.innerHTML = resposta[i].descricao;
 
                     const liPreco = document.createElement('li');
                     liPreco.setAttribute('data-produto', 'preco');
                     liPreco.innerHTML = resposta[i].preco;
-                    
 
-                    ul.append(liId, liDescricao,liPreco)
-                    
-                 
+
+                    ul.append(liId, liDescricao, liPreco)
+
+
 
                     document.querySelector('#listaProdutos').appendChild(ul);
 
                 }
-                  
+
             });
 
             // const informacoes = ['id', 'descricao', 'preco'];
