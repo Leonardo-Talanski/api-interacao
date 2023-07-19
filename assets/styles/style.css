@@ -125,7 +125,7 @@
      justify-content: space-evenly;
  }
 
- .bt-Confirmar {
+ .bt-Atualizar {
     width: 10.4rem;
     height: 2.9rem;
     border-radius: 0.25rem;
@@ -139,15 +139,33 @@
     font-weight: 400;
     line-height: normal;
     border: none;
+    cursor: pointer;
  }
 
- .bt-Confirmar:disabled {
-    background: #CAE6FF;
+
+
+#btAtualizar:hover {
+    background-color: #007BED;
 }
 
-.bt-confirmar:enabled:hover,
-.bt-confirmar:enabled:active {
-    background: #007BED;
+#btCancelar:hover {
+    background-color: #FF5F5F;
+    color: #fff;
+}
+
+#btCancelar:disabled {
+    cursor: not-allowed;
+    background-color: #e2e0e0;
+    box-shadow: none;
+    color: #ccc;
+    border: none;
+}
+
+#btAtualizar:disabled {
+    cursor: not-allowed;
+    background-color: #e2e0e0;
+    box-shadow: none;
+    color: #ccc;
 }
 
  .bt-Cancelar {
@@ -164,39 +182,8 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    cursor: pointer;
  }
-
- .bt-Cancelar:disabled {
-     background: #fff;
-     color: #ccc;
-     border: 1px solid #ccc;
- }
-
- .bt:enabled {
-     cursor: pointer;
- }
-
- .bt:disabled {
-     cursor: not-allowed;
-     box-shadow: none;
- }
-
- .bt-cancelar:enabled:hover,
- .bt-cancelar:enabled:active {
-     background: #F59999;
-     color: #fff;
- }
-
- .bt-confirmar:enabled:active,
- .bt-cancelar:enabled:active {
-     box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
- }
-
-
- #btAtualizar:hover {
-     background-color: #007BED;
- }
-
 
  #btAtualizar:active {
      box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.25) inset;

@@ -11,6 +11,7 @@ fetch('http://localhost:3000/produtos', {
     .then(resposta => resposta.json())
     .then(resposta => {
 
+       
         for (let i = 0; i < resposta.length; i++) {
 
             const ul = document.createElement('ul');
