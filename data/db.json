@@ -4,7 +4,7 @@
       "id": 1,
       "descricao": "Sapato Social",
       "preco": "R$ 19,90",
-      "atualizado": false
+      "atualizado": true
     },
     {
       "id": 2,
