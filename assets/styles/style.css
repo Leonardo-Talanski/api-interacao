@@ -49,13 +49,13 @@
      margin: auto;
  }
 
- .page-Title-Put {
+ .page-Title {
      display: flex;
      justify-content: center;
      align-items: center;
  }
 
- .page-Title-Put h1 {
+ .page-Title h1 {
      color: #000;
      text-align: center;
      font-size: 32px;
@@ -63,6 +63,13 @@
      font-weight: 400;
      line-height: normal;
      margin: 27px;
+ }
+
+ .page-Title a{
+    text-decoration: none;
+    font-size: 25pt;
+    color: #000;
+    text-transform: uppercase;
  }
 
  .box-form {
@@ -253,4 +260,53 @@
      margin-left: 5rem;
  }
 
- 
+ /* --Botão Apagar Produtos Delete com Delete-- */
+
+ .box-btDeletarProdutos {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+
+ #btDeletarProdutos {
+    width: 14rem;
+    height: 2.9rem;
+    border-radius: 0.25rem;
+    background: #48A4FA;
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    color: #FFF;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border: none;
+    cursor: pointer;
+ }
+
+
+ /* --NAVBAR-- */
+
+
+ .navbar {
+    background-color: beige;
+}
+
+.navbar ul {
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar li {
+    list-style: none;
+    text-align: center;
+}
+
+.navbar a {
+    color: #000;
+    text-decoration: none;
+}
