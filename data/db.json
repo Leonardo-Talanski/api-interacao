@@ -1,12 +1,6 @@
 {
   "produtos": [
     {
-      "id": 1,
-      "descricao": "Sapato Social",
-      "preco": "R$ 19,90",
-      "atualizado": true
-    },
-    {
       "id": 2,
       "descricao": "Sapatilha Chicago",
       "preco": "R$ 26,00",
@@ -37,9 +31,14 @@
       "atualizado": true
     },
     {
-      "id": 7,
-      "descricao": "Sapatilha Chicago Novo",
-      "preco": "56,90"
+      "id": 8,
+      "descricao": "Tênis Nike",
+      "preco": "R$ 56,90"
+    },
+    {
+      "id": 9,
+      "descricao": "Tênis Masculino Adidas",
+      "preco": "R$ 250,00"
     }
   ]
 }

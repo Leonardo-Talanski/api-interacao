@@ -2,6 +2,7 @@
 
  body {
      font-family: 'Ubuntu', sans-serif;
+     background-color: #FEFFE4;
  }
 
  /* .produto {
@@ -251,3 +252,5 @@
      margin-right: auto;
      margin-left: 5rem;
  }
+
+ 
