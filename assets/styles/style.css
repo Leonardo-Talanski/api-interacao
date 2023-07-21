@@ -1,8 +1,18 @@
  @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Montserrat+Alternates:wght@700&display=swap');
 
- body {
+ :root {
      font-family: 'Ubuntu', sans-serif;
      background-color: #FEFFE4;
+ }
+
+ body {
+    display: flex;
+    flex-direction: column;
+ }
+
+ header {
+    width: 90%;
+    margin: 0 auto;
  }
 
  /* .produto {
@@ -49,10 +59,8 @@
      margin: auto;
  }
 
- .page-Title {
-     display: flex;
-     justify-content: center;
-     align-items: center;
+ .page-Title ul {
+    background-color: #F4E0B9;
  }
 
  .page-Title h1 {
@@ -65,7 +73,7 @@
      margin: 27px;
  }
 
- .page-Title a{
+ .page-Title a {
     text-decoration: none;
     font-size: 25pt;
     color: #000;
@@ -149,8 +157,6 @@
     border: none;
     cursor: pointer;
  }
-
-
 
 #btAtualizar:hover {
     background-color: #007BED;
@@ -289,7 +295,6 @@
 
  /* --NAVBAR-- */
 
-
  .navbar {
     background-color: beige;
 }
@@ -310,3 +315,25 @@
     color: #000;
     text-decoration: none;
 }
+
+.estilo-p {
+    font-size: 16pt;
+    line-height: 40px;
+  
+}
+
+.sub-menu {
+    display: flex;
+    justify-content: center;
+    font-size: 14pt;
+    flex-direction: column;
+    line-height: 30px;
+}
+
+
+.sub-menu li a {
+    display: flex;
+    justify-content: center;
+
+}
+
