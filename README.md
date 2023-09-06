@@ -4,7 +4,12 @@
 
 Projeto desenvolvido para simular uma API usando: HTML, CSS e JAVASCRIPT.
 
+Essa simulação de API contém os métodos de requisição HTTP:
 
+POST<br>
+GET<br>
+UPDATE<br>
+DELETE<br>
 
 Instruções : Aperte qualquer tecla para iniciar o jogo, o objetivo é pular sobre os canos e se encostar o jogo será reiniciado.
 
