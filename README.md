@@ -11,7 +11,7 @@ GET<br>
 UPDATE<br>
 DELETE<br>
 
-Instruções : Aperte qualquer tecla para iniciar o jogo, o objetivo é pular sobre os canos e se encostar o jogo será reiniciado.
+Instruções : 
 
 Status do Projeto :
 
